@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Créneau Plein — Un rendez-vous annulé est reproposé dans la minute</title>
+<meta name="description" content="Une annulation, et le créneau part aussitôt vers vos clients en liste d'attente. Le premier qui confirme l'obtient. 39 €/mois.">
+<meta property="og:title" content="Créneau Plein — Un rendez-vous annulé est reproposé dans la minute">
+<meta property="og:description" content="Ne perdez plus de prestation sur une annulation de dernière minute.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0F3D2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--sapin:#0F3D2E;--orange:#E8590C;--creme:#FAF7F2;--encre:#1D2A25;--gris:#5E6B65;--trait:#DDD6C8}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--creme);color:var(--encre);font:400 1.0625rem/1.55 "Public Sans",system-ui,sans-serif;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+h1,h2{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;color:var(--sapin);line-height:1.05;letter-spacing:-.02em}
+.wrap{max-width:34rem;margin:0 auto;padding:0 1.25rem}
+header{background:var(--sapin);color:var(--creme);padding:calc(1.5rem + env(safe-area-inset-top,0px)) 0 2.25rem}
+.marque{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;font-size:1.05rem;margin-bottom:2rem}
+h1{color:var(--creme);font-size:clamp(2.25rem,10vw,3.4rem)}
+.sous{margin-top:1rem;color:#D5E2DB}
+.agenda{margin-top:1.75rem;background:var(--creme);color:var(--encre);border-radius:6px;overflow:hidden}
+.ligne{display:flex;justify-content:space-between;padding:.7rem 1rem;border-bottom:1px solid var(--trait);font-size:.98rem}
+.ligne:last-child{border-bottom:0}
+.ligne b{font-weight:600}
+.ligne span{color:var(--gris)}
+.vide{position:relative;height:3.05rem;background:#FCE3D3;border-bottom:1px solid var(--trait)}
+.vide>div{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 1rem}
+.vide .avant{color:var(--orange);font-weight:600;animation:sort .3s 2.2s forwards}
+.vide .apres{background:var(--sapin);color:var(--creme);opacity:0;animation:entre .3s 2.2s forwards}
+.vide .apres span{color:#B9D0C4}
+@keyframes sort{to{opacity:0}}
+@keyframes entre{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.vide .avant{animation:none;opacity:0}.vide .apres{animation:none;opacity:1}}
+section{padding:2.5rem 0;border-bottom:1px solid var(--trait)}
+h2{font-size:1.9rem;margin-bottom:1rem}
+.chiffre{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;font-size:3rem;color:var(--orange);line-height:1}
+ul{list-style:none;padding:0}
+li{padding:1rem 0;border-top:1px solid var(--trait)}
+li:first-child{border-top:0;padding-top:0}
+li strong{display:block;color:var(--sapin);font-size:1.1rem}
+.offre{background:var(--sapin);color:var(--creme);padding:2.5rem 0;border:0}
+.offre h2{color:var(--creme)}
+.prix{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;font-size:3.4rem;line-height:1}
+.prix small{font-size:1.1rem;font-weight:400;font-family:"Public Sans",sans-serif}
+.offre p{margin-top:.75rem;color:#D5E2DB}
+.btn{display:block;text-align:center;background:var(--orange);color:#fff;font:600 1.1rem "Public Sans",sans-serif;text-decoration:none;padding:1.05rem 1rem;border-radius:6px;min-height:52px}
+.btn:focus-visible{outline:3px solid var(--sapin);outline-offset:3px}
+.barre{position:fixed;left:0;right:0;bottom:0;background:var(--creme);border-top:1px solid var(--trait);padding:.75rem 1.25rem calc(.75rem + env(safe-area-inset-bottom,0px))}
+.barre .btn{max-width:34rem;margin:0 auto}
+footer{padding:1.5rem 0;font-size:.85rem;color:var(--gris)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="marque">Créneau Plein</div>
+    <h1>Un rendez-vous annulé est reproposé dans la minute.</h1>
+    <p class="sous">Votre créneau part aussitôt vers vos clients en liste d'attente. Le premier qui confirme le prend.</p>
+    <div class="agenda" aria-label="Exemple d'agenda">
+      <div class="ligne"><b>10 h 00</b><span>Léa M. · soin visage</span></div>
+      <div class="vide" role="img" aria-label="Le créneau de 14 h annulé est repris par Camille en quelques secondes">
+        <div class="avant"><b>14 h 00</b><span style="color:var(--orange)">Annulé</span></div>
+        <div class="apres"><b>14 h 00</b><span>Camille R. · confirmé</span></div>
+      </div>
+      <div class="ligne"><b>16 h 30</b><span>Karim B. · coaching</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="chiffre">60 €</div>
+    <h2>perdus à chaque annulation le jour même.</h2>
+    <p>Une annulation le matin pour l'après-midi laisse un trou que personne n'a le temps de combler. La prestation est perdue, et elle ne se rattrape jamais.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Trois choses, rien de plus.</h2>
+    <ul>
+      <li><strong>Vos clients remplissent la liste d'attente.</strong>Vous partagez un lien. Ils s'inscrivent eux-mêmes.</li>
+      <li><strong>Le créneau libéré part tout de suite.</strong>Un clic de votre part, et les bonnes personnes sont prévenues.</li>
+      <li><strong>Le premier qui confirme gagne.</strong>Votre agenda est mis à jour. Un compteur vous montre les créneaux sauvés et l'argent récupéré.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="offre" id="offre">
+  <div class="wrap">
+    <h2>Offre membre fondateur</h2>
+    <div class="prix">39 €<small> / mois</small></div>
+    <p>Créneaux illimités. Un seul créneau sauvé rembourse votre mois.</p>
+    <p>Le service est en construction : livraison prévue le <strong>[DATE À COMPLÉTER]</strong>. Vous ne payez qu'à partir de cette date. [À VÉRIFIER AVANT DE LANCER]</p>
+    <!-- Remplacer # par le lien Stripe Payment Link (voir étape suivante) -->
+    <a class="btn" href="#" style="margin-top:1.5rem">Réserver ma place</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Créneau Plein · [RAISON SOCIALE] · SIRET [À COMPLÉTER]<br>Mentions légales, CGV et confidentialité : bientôt en ligne.</div>
+</footer>
+
+<div class="barre"><a class="btn" href="#">Réserver ma place · 39 €/mois</a></div>
+</body>
+</html>
